@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<title>Online Examination</title>
+<style>
+p {
+  font-size:20px;
+  margin-left:340px;
+  margin-top:0px;
+  position:fixed;
+}
+</style>
+</head>
+<body>
+<form id="form" action="Result" method="post">
+<script>
+var seconds = 2000;
+function decrementSeconds() {
+    seconds -= 1;
+    document.getElementById("seconds-counter").innerText = "You have been here for " + seconds + " seconds.";
+    if(seconds==0){
+    	alert("Time Up");
+    	document.getElementById("form").submit();
+    }
+    
+}
+var cancel = setInterval(decrementSeconds, 0);
+</script>
+<p id="seconds-counter"></p><br/><br/>
+<h1><center>Multiple Choice Questions</center></h1>
+<h3>Answer the following 10 Questions</h3>
+<label><b>1. What is our National fruit ? </b></label><br/>
+<input type="radio" name="option1" value="Mango">Mango<br/>
+<input type="radio" name="option1" value="Orange">Orange<br/>
+<input type="radio" name="option1" value="Grapes">Grapes<br/>
+<input type="radio" name="option1" value="Banana">Banana<br/>
+<br/>
+<label><b>2. what is the middle color in the Indian flag ?</b></label><br/>
+<input type="radio" name="option2" value="Yellow">Yellow<br/>
+<input type="radio" name="option2" value="Black">Black<br/>
+<input type="radio" name="option2" value="Orange">Orange<br/>
+<input type="radio" name="option2" value="White">White<br/>
+<br/>
+<label><b>3. what is our national animal ?</b></label><br/>
+<input type="radio" name="option3" value="Lion">Lion<br/>
+<input type="radio" name="option3" value="Tiger">Tiger<br/>
+<input type="radio" name="option3" value="Zebra">Zebra<br/>
+<input type="radio" name="option3" value="Cat">Cat<br/>
+<br/>
+<label><b>4. what is our National geetham ?</b></label><br/>
+<input type="radio" name="option4" value="Vandhe madharam">Vandhe madharam<br/>
+<input type="radio" name="option4" value="Twinkle twinkle">Twinkle twinkle<br/>
+<input type="radio" name="option4" value="Neerarung">Neerarung<br/>
+<input type="radio" name="option4" value="Zanaganamanagana">Zanaganamanagana<br/>
+<br/>
+<label><b>5. what is the district of katpadi ?</b></label><br/>
+<input type="radio" name="option5" value="Vellore">Vellore<br/>
+<input type="radio" name="option5" value="Tamilnadu">Tamilnadu<br/>
+<input type="radio" name="option5" value="Tiruchi">Tiruchi<br/>
+<input type="radio" name="option5" value="Ranipet">Ranipet<br/>
+<br/>
+<label><b>6. what is the state of Vellore ?</b></label><br/>
+<input type="radio" name="option6" value="Andra">Andra<br/>
+<input type="radio" name="option6" value="Tamilnadu">Tamilnadu<br/>
+<input type="radio" name="option6" value="Kerala">Kerala<br/>
+<input type="radio" name="option6" value="Ranipet">Ranipet<br/>
+<br/>
+<label><b>7. what is the Country of Tamilnadu ?</b></label><br/>
+<input type="radio" name="option7" value="India">India<br/>
+<input type="radio" name="option7" value="Europe">Europe<br/>
+<input type="radio" name="option7" value="Atlandis">Atlandis<br/>
+<input type="radio" name="option7" value="Artic">Artic<br/>
+<br/>
+<label><b>8. Which is famous for lock ?</b></label><br/>
+<input type="radio" name="option8" value="Dindukkal">Dindukkal<br/>
+<input type="radio" name="option8" value="Tirupathi">Tirupathi<br/>
+<input type="radio" name="option8" value="Vellore">Vellore<br/>
+<input type="radio" name="option8" value="Tiruchi">Tiruchi<br/>
+<br/>
+<label><b>9. Which is famous for Jasmine ?</b></label><br/>
+<input type="radio" name="option9" value="Dindukkal">Dindukkal<br/>
+<input type="radio" name="option9" value="Madhurai">Madhurai<br/>
+<input type="radio" name="option9" value="Vellore">Vellore<br/>
+<input type="radio" name="option9" value="Tiruchi">Tiruchi<br/>
+<br/>
+<label><b>10. Who is the minister of Education department in tamilnadu ?</b></label><br/>
+<input type="radio" name="option10" value="K A Sengotaiyan">K A Sengotaiyan<br/>
+<input type="radio" name="option10" value="vijayabaskar">vijayabaskar<br/>
+<input type="radio" name="option10" value="Ponmudi">Ponmudi<br/>
+<input type="radio" name="option10" value="OPS">OPS<br/>
+<br/>
+<button>Submit</button>
+<button>Cancel</button>
+</form>
+</body>
+</html>
